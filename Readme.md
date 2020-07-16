@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Шишкин](https://up.htmlacademy.ru/adaptive/20/user/1106885).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Вадясова](https://up.htmlacademy.ru/adaptive/20/user/46068).
 
 ---
 
