@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Pink</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+      </a>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">Html academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="promo">
+    <div class="promo__wrapper">
+      <h1 class="promo__title">Взгляните на жизнь иначе!</h1>
+      <div class="promo__download">
+        <a class="promo__download-button" href="https://www.apple.com/ios/app-store" target="_blank">Скачать
+          приложение</a>
+        <ul class="promo__list">
+          <li class="promo__item"><a class="promo__link promo__link--apple" href="https://www.apple.com/ios/app-store"
+              target="_blank" aria-label="Переход на App Store"><span class="visually-hidden">Apple</span></a></li>
+          <li class="promo__item"><a class="promo__link promo__link--android" href="https://play.google.com/store"
+              target="_blank" aria-label="Переход на Google Play"><span class="visually-hidden">Android</span></a></li>
+          <li class="promo__item"><a class="promo__link promo__link--microsoft"
+              href="https://www.microsoft.com/ru-RU/store/apps" target="_blank"
+              aria-label="Переход на Microsoft Store"><span class="visually-hidden">Microsoft</span></a></li>
+        </ul>
+        <p class="promo__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+  </section>
+  <main class="page-main">
+    <h2 class="visually-hidden">Пинк - Продуктовый лендинг приложения</h2>
+    <section class="offering">
+      <header class="offering__header">
+        <h3 class="visually-hidden">Наше предложение</h3>
+        <p class="offering__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+      </header>
+      <div class="offering__wrapper">
+        <ul class="offering__list">
+          <li class="offering__item offering__item--cheers-up">
+            <h4 class="offering__title">Поднимает настроение</h4>
+            <p class="offering__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="offering__item offering__item--changes-the-world">
+            <h4 class="offering__title">Меняет мир вокруг</h4>
+            <p class="offering__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="offering__item offering__item--makes-friends">
+            <h4 class="offering__title">Заводит новых друзей</h4>
+            <p class="offering__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+      </a>
+      <section class="page-footer__social social">
+        <h3 class="visually-hidden">Подписывайтесь на нас в соцсетях</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Переход на Твиттер"><span
+                class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Переход на Фейсбук"><span
+                class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Переход на Ютуб"><span
+                class="visually-hidden">Ютуб</span></a>
+          </li>
+        </ul>
+      </section>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Html Academy"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
