@@ -1,183 +1,179 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>Фотографии|Pink</title>
 </head>
-<body class="page__body inner-page">
+
+<body class="page__body page__inner">
   <header class="page-header">
     <nav class="main-nav">
-      <div class="main-nav__main-wrapper">
-        <div class="main-nav__logo-wrapper">
-          <a class="main-nav__logo" href="index.html">
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">Html academy</a></li>
-          </ul>
-        </div>
+      <a class="main-nav__logo" href="index.html" aria-label="Переход на главную">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+      </a>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">Html academy</a></li>
+        </ul>
       </div>
     </nav>
-    <div class="page-header__wrapper">
-      <div class="intro">
-        <div class="intro__wrapper">
-          <h2 class="intro__title">Фотографии пользователей</h2>
-        </div>
-      </div>
-    </div>
   </header>
+  <section class="promo">
+    <div class="promo__wrapper">
+      <h1 class="promo__title">Фотографии пользователей</h1>
+    </div>
+  </section>
   <main class="page-main">
-    <h1 class="visually-hidden">Страница фотографий пользователей</h1>
-    <section class="photos">
-      <div class="photos__wrapper">
-        <h2 class="visually-hidden">Фотографии</h2>
-        <div class="photos__slogan-wrapper">
-          <p class="photos__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
-            ваших?</p>
-        </div>
-        <div class="user-photo user-photo--panorama">
-          <div class="user-photo__panorama-wrapper">
-            <div class="user-photo__panorama">Панорама дня</div>
+    <h2 class="visually-hidden">Страница фотографий пользователей</h2>
+    <section class="user-photo">
+      <div class="user-photo__wrapper">
+        <h3 class="visually-hidden">Фотографии</h3>
+        <p class="user-photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+          ваших?</p>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <div class="user-photo__badge">
+              <span class="user-photo__badge-text">Панорама дня</span>
+            </div>
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Панорама">
           </div>
-          <picture class="user-photo__image user-photo__image--one user-photo__image--panorama">
-            <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Фото моста">
-          </picture>
-          <article class="user-photo__caption user-photo__caption--wrapper">
-            <h4 class="user-photo__title">Анна</h4>
-            <span>(5 минут назад)</span>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Анна</h4>
+            <span class="user-photo__time">(5 минут назад)</span>
             <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию
-              в перископе, задавайте свои вопросы!</p>
-            <footer class="user-photo__footer user-photo__footer--panoram">
-              <span class="user-photo__like">Нравится: 215</span>
-            </footer>
-          </article>
-        </div>
-        <div class="photos__wrapper-inner">
-          <div class="user-photo">
-            <picture class="user-photo__image user-photo__image--two">
-              <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото машины">
-            </picture>
-            <article class="user-photo__caption">
-              <h4 class="user-photo__title">Левон</h4>
-              <span>(5 часов назад)</span>
-              <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <footer class="user-photo__footer">
-                <span class="user-photo__like">Нравится: 356</span>
-              </footer>
-            </article>
+              в
+              перископе, задавайте свои вопросы!</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 215</span>
           </div>
-          <div class="user-photo">
-            <picture class="user-photo__image user-photo__image--three">
-              <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото барабанов">
-            </picture>
-            <article class="user-photo__caption">
-              <h4 class="user-photo__title">Антон</h4>
-              <span>(12 часов назад)</span>
-              <p class="user-photo__text">Соседи будут рады!</p>
-              <footer class="user-photo__footer">
-                <span class="user-photo__like">Нравится: 666</span>
-              </footer>
-            </article>
+        </article>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фото автомобиля">
           </div>
-          <div class="user-photo">
-            <picture class="user-photo__image user-photo__image--four">
-              <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото хола">
-            </picture>
-            <article class="user-photo__caption">
-              <h4 class="user-photo__title">Борис</h4>
-              <span>(20 часов назад)</span>
-              <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <footer class="user-photo__footer">
-                <span class="user-photo__like">Нравится: 215</span>
-              </footer>
-            </article>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Левон</h4>
+            <span class="user-photo__time">(5 часов назад)</span>
+            <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 356</span>
           </div>
-          <div class="user-photo">
-            <picture class="user-photo__image user-photo__image--five">
-              <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото рынка">
-            </picture>
-            <article class="user-photo__caption">
-              <h4 class="user-photo__title">Сергей</h4>
-              <span>(25 часов назад)</span>
-              <p class="user-photo__text">Самая кубанская в мире!</p>
-              <footer class="user-photo__footer">
-                <span class="user-photo__like">Нравится: 4</span>
-              </footer>
-            </article>
+        </article>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фото барабанов">
           </div>
-          <div class="user-photo">
-            <picture class="user-photo__image user-photo__image--six">
-              <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото спуска с гор">
-            </picture>
-            <article class="user-photo__caption">
-              <h4 class="user-photo__title">Максим</h4>
-              <span>(40 часов назад)</span>
-              <p class="user-photo__text">Где снег-то?</p>
-              <footer class="user-photo__footer">
-                <span class="user-photo__like">Нравится: 150</span>
-              </footer>
-            </article>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Антон</h4>
+            <span class="user-photo__time">(12 часов назад)</span>
+            <p class="user-photo__text">Соседи будут рады!</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 666</span>
           </div>
-          <div class="user-photo">
-            <picture class="user-photo__image user-photo__image--seven">
-              <img class="user-photo__mobile-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото крыла самолета">
-            </picture>
-            <article class="user-photo__caption">
-              <h4 class="user-photo__title">Надежда</h4>
-              <span>(45 часов назад)</span>
-              <p class="user-photo__text">Всем GM и взаимные лайки!</p>
-              <footer class="user-photo__footer">
-                <span class="user-photo__like">Нравится: 2560</span>
-              </footer>
-            </article>
+        </article>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фото холла">
           </div>
-        </div>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Борис</h4>
+            <span class="user-photo__time">(20 часов назад)</span>
+            <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 215</span>
+          </div>
+        </article>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фото рынка">
+          </div>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Сергей</h4>
+            <span class="user-photo__time">(25 часов назад)</span>
+            <p class="user-photo__text">Самая кубанская в мире!</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 4</span>
+          </div>
+        </article>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фото спуска с горы">
+          </div>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Максим</h4>
+            <span class="user-photo__time">(40 часов назад)</span>
+            <p class="user-photo__text">Где снег-то?</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 150</span>
+          </div>
+        </article>
+        <article class="user-photo__description">
+          <div class="user-photo__mobile-image">
+            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фото крыла самолёта">
+          </div>
+          <div class="user-photo__content">
+            <h4 class="user-photo__author-name">Надежда</h4>
+            <span class="user-photo__time">(45 часов назад)</span>
+            <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+            <button class="user-photo__button-like user-photo__button-like--heart" aria-label="Поставь лайк">
+              <span class="visually-hidden">Поставь лайк</span>
+            </button>
+            <span class="user-photo__like">Нравится: 2560</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo-wrapper">
-        <a class="page-footer__logo" href="index.html">
-          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+      <a class="page-footer__logo" href="index.html" aria-label="Переход на главную">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+      </a>
+      <section class="page-footer__social social">
+        <h3 class="visually-hidden">Подписывайтесь на нас в соцсетях</h3>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              Твиттер</a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Переход на Твиттер"><span
+                class="visually-hidden">Твиттер</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Переход на Фейсбук"><span
+                class="visually-hidden">Фейсбук</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Ютуб</a>
+            <a class="social__link social__link--youtube" href="#" aria-label="Переход на Ютуб"><span
+                class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive">Html
-          Academy</a>
+        <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Html Academy"></a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>
