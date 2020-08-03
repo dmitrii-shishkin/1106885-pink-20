@@ -13,7 +13,6 @@
         <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -33,12 +32,12 @@
           приложение</a>
         <ul class="promo__list">
           <li class="promo__item"><a class="promo__link promo__link--apple" href="https://www.apple.com/ios/app-store"
-              target="_blank" aria-label="Переход на App Store"><span class="visually-hidden">Apple</span></a></li>
+              target="_blank" aria-label="Переход на App Store"></a></li>
           <li class="promo__item"><a class="promo__link promo__link--android" href="https://play.google.com/store"
-              target="_blank" aria-label="Переход на Google Play"><span class="visually-hidden">Android</span></a></li>
+              target="_blank" aria-label="Переход на Google Play"></a></li>
           <li class="promo__item"><a class="promo__link promo__link--microsoft"
               href="https://www.microsoft.com/ru-RU/store/apps" target="_blank"
-              aria-label="Переход на Microsoft Store"><span class="visually-hidden">Microsoft</span></a></li>
+              aria-label="Переход на Microsoft Store"></a></li>
         </ul>
         <p class="promo__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -71,6 +70,93 @@
         </ul>
       </div>
     </section>
+    <section class="reviews">
+      <h3 class="visually-hidden">Отзывы</h3>
+      <div class="reviews__wrapper slider">
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </blockquote>
+          <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
+          <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
+        </div>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
+          <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
+          <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <h3 class="visually-hidden">Наши цены</h3>
+      <div class="price__wrapper slider">
+        <div class="price__badge">
+          <span class="price__badge-text">Хит</span>
+        </div>
+        <table class="price__table">
+          <thead class="price__header">
+            <tr class="price__row">
+              <th class="price__cell-title">&nbsp;</th>
+              <th class="price__cell-title">База 1,99 usd</th>
+              <th class="price__cell-title">Стандарт 3,99 usd</th>
+              <th class="price__cell-title">Анлим 9,99 usd</th>
+            </tr>
+          </thead>
+          <tbody class="price__body">
+            <tr class="price__row">
+              <td class="price__cell-product">Розовый фильтр</td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+            </tr>
+            <tr class="price__row">
+              <td class="price__cell-product">Смайлики</td>
+              <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+            </tr>
+            <tr class="price__row">
+              <td class="price__cell-product">Комментарии</td>
+              <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="price__toggles slider__toggles">
+        <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
+        <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
+        <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
+      </div>
+    </section>
+    <section class="contacts">
+      <header class="contacts__header">
+        <h3 class="visually-hidden">Контакты</h3>
+        <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
+      </header>
+      <div class="contacts__wrapper">
+        <dl class="contacts__list">
+          <div class="contacts__item">
+            <dt class="contacts__title">Звоните:</dt>
+            <dd class="contacts__description"><a href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__title">Пишите:</dt>
+            <dd class="contacts__description"><a href="mail@htmlacademy.ru" target="_blank">mail@htmlacademy.ru</a></dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__title">Приезжайте в гости:</dt>
+            <dd class="contacts__description">ул. Большая Конюшенная, 19/8</dd>
+          </div>
+        </dl>
+      </div>
+      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Адрес офиса по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -81,17 +167,13 @@
         <h3 class="visually-hidden">Подписывайтесь на нас в соцсетях</h3>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Переход на Твиттер"><span
-                class="visually-hidden">Твиттер</span>
-            </a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Переход на Твиттер"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="Переход на Фейсбук"><span
-                class="visually-hidden">Фейсбук</span></a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Переход на Фейсбук"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="Переход на Ютуб"><span
-                class="visually-hidden">Ютуб</span></a>
+            <a class="social__link social__link--youtube" href="#" aria-label="Переход на Ютуб"></a>
           </li>
         </ul>
       </section>
