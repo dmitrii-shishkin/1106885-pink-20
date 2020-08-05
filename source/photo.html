@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Фотографии|Pink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__inner">
@@ -29,7 +31,7 @@
       <h1 class="intro__title">Фотографии пользователей</h1>
     </div>
   </section>
-  <main class="page-photo">
+  <main class="page-main">
     <h2 class="visually-hidden">Страница фотографий пользователей</h2>
     <section class="user-photo">
       <div class="user-photo__wrapper">
@@ -143,27 +145,25 @@
     </section>
     <section class="upload">
       <h3 class="visually-hidden">Загрузка фотографий</h3>
+      <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
-        <div class="upload__grey-back">
-          <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
           <div class="upload__photo">
             <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Зимняя дорога">
           </div>
           <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="upload__range-filter">
               <div class="upload__icon-filter">
-                <button class="upload__button-icon upload__button-icon--crop" aria-label="Изменить размер"></button>
-                <button class="upload__button-icon upload__button-icon--fill"
+                <button class="upload__button-icon upload__button-icon--crop" type="button" aria-label="Изменить размер"></button>
+                <button class="upload__button-icon upload__button-icon--fill" type="button"
                   aria-label="Изменить насыщеность"></button>
-                <button class="upload__button-icon upload__button-icon--contrast"
+                <button class="upload__button-icon upload__button-icon--contrast" type="button"
                   aria-label="Изменить контрастность"></button>
               </div>
               <input class="upload__input-range" type="range">
             </div>
             <button class="upload__button-post" type="submit">Запостить</button>
-            <button class="upload__button-cancel" type="submit">Отмена</button>
+            <button class="upload__button-cancel" type="reset">Отмена</button>
           </form>
-        </div>
       </div>
     </section>
   </main>
