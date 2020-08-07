@@ -1,64 +1,107 @@
-.form-story {
-  &__slogan {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: #283645;
+.form-story__slogan {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @blue-gray;
+}
+
+.form-story__field-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.form-story__field {
+  padding: 23px 103px 23px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @blue-gray;
+  border: 2px solid @mercury;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @blue-gray;
+  }
+}
+
+.form-story fieldset {
+  .reset-fieldset();
+}
+
+.form-story__list {
+  .reset-list();
+}
+
+.form-story__grey-back {
+  background-color: @pale-gray;
+}
+
+.form-story__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @pink;
+}
+
+.form-story__label-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @blue-gray;
+}
+
+.form-story__comment-text {
+  padding: 22px 25px 132px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @blue-gray;
+  border: 2px solid @mercury;
+  border-radius: 1px;
+  resize: none;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @blue-gray;
+  }
+}
+
+.form-story__button-send {
+  padding: 23px 45px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: @white;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 1px;
+  background-color: @dark-green;
+
+  &:hover,
+  &:focus {
+    background-color: @green;
   }
 
-  &__field-name {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #d22856;
+  &:active {
+    opacity: 0.3;
   }
 
-  &__field {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
+  &:disabled {
+    background-color: @mercury;
   }
+}
 
-  &__grey-back {
-    background-color: #f2f2f2;
-  }
-
-  &__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #d22856;
-  }
-
-  &__label-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
-  }
-
-  &__comment-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
-  }
-
-  &__button-send {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-
-  &__required-fields {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #283645;
-  }
+.form-story__required-fields {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @blue-gray;
 }

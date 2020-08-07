@@ -1,24 +1,47 @@
 .promo {
-  background-color: #1d2631;
+  background-color: @dusky-blue-gray;
+}
 
-  &__title {
-    font-size: 24px;
-    line-height: 120%;
-    font-weight: 300;
-    color: #ffffff;
+.promo__title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  color: @white;
+}
+
+.promo__download-button {
+  padding: 18px 35px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @white;
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid @white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: @pink;
+    background-color: @white;
+    box-shadow: 0 5px 7px @shadow;
   }
 
-  &__download-button {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #ffffff;
+  &:active {
+    color: @pink;
+    opacity: 0.3;
   }
+}
 
-  &__content {
-    font-size: 14px;
-    line-height: 24%;
-    font-weight: 300;
-    color: #ffffff;
-  }
+.promo__list {
+  .reset-list();
+}
+
+.promo__content {
+  font-size: 14px;
+  line-height: 24%;
+  font-weight: 300;
+  color: @white;
 }
