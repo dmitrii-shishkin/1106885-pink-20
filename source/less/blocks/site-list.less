@@ -1,9 +1,16 @@
-.site-list {
-  &__item {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
+.site-list__link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @white;
+
+  &:hover,
+  &:focus {
+    color: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
