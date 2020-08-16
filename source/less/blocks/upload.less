@@ -1,12 +1,93 @@
 .upload__slogan {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   color: @blue-gray;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .upload__wrapper {
   background-color: @pale-gray;
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.upload__filter {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.upload__form-filter {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.upload__icon-filter {
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.upload__range-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload__range-current {
+  width: 100%;
+}
+
+.upload__range {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.upload__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.upload__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .upload__button-post {

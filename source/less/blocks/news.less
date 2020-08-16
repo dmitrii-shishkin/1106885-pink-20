@@ -1,0 +1,112 @@
+.news {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @pale-gray;
+  }
+}
+
+.news__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.news__number {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin: 0;
+    padding: 1px 30px 8px;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 163px;
+    color: @pink;
+    border: 16px solid @pink;
+    border-radius: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 22px 40px 29px;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 163px;
+    color: @pink;
+    border: 18px solid @pink;
+    border-radius: 50%;
+  }
+}
+
+.news__content {
+  @media (min-width: @tablet-width) {
+    margin-left: 90px;
+    padding: px 0 0;
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 94px;
+    width: 525px;
+  }
+}
+
+.news__title {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: @black;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: @black;
+  }
+}
+
+.news__text {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @blue-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+    padding-right: 3px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: @blue-gray;
+  }
+}
+
+.news__link {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @pink;
+    text-decoration-line: underline;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: @pink;
+    text-decoration-line: underline;
+  }
+}

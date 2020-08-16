@@ -1,16 +1,72 @@
+.form-story__form {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+  }
+}
+
+.form-story__user-form {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
 .form-story__slogan {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   color: @blue-gray;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.form-story__user {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-story__user-list {
+  .reset-list();
+}
+
+.form-story__user-item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-bottom: 56px;
+  }
 }
 
 .form-story__field-name {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: @pink;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
 }
 
 .form-story__field {
@@ -26,35 +82,151 @@
   &:focus {
     border: 2px solid @blue-gray;
   }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+  }
 }
 
-.form-story fieldset {
-  .reset-fieldset();
+.form-story__group {
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @mercury;
+    border-radius: 1px;
+  }
 }
 
-.form-story__list {
+.form-story__record {
+  background-color: @pale-gray;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+}
+
+.form-story__app {
+  background-color: @pale-gray;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+}
+
+.form-story__list-record {
+  .reset-list();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form-story__list-app {
   .reset-list();
 }
 
-.form-story__grey-back {
-  background-color: @pale-gray;
-}
-
-.form-story__title {
+.form-story__title-contact {
+  display: none;
+  margin: 0;
+  padding: 0 31px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @pink;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.form-story__list-contact {
+  .reset-list();
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form-story__item-contact {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-story__field-name-contact {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.form-story__field-contact {
+  margin: 0;
+  padding: 23px 103px 23px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @blue-gray;
+  border: 2px solid @mercury;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @blue-gray;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+    order: -1;
+  }
+}
+
+.form-story__title {
+  margin: 0;
+  padding: 0 31px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
   color: @pink;
 }
 
 .form-story__label-text {
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: @blue-gray;
 }
 
+.form-story__comment {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .form-story__comment-text {
+  margin: 0;
   padding: 22px 25px 132px 20px;
   font-weight: 400;
   font-size: 18px;
@@ -67,6 +239,19 @@
   &:hover,
   &:focus {
     border: 2px solid @blue-gray;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.form-story__button-wrapper {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -99,9 +284,12 @@
 }
 
 .form-story__required-fields {
+  align-self: center;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
   color: @blue-gray;
 }
