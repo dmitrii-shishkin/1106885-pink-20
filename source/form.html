@@ -3,19 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма|Pink</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__inner">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+      </button>
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html" aria-label="Переход на главную">
-          <img src="/source/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          </picture>
         </a>
-        <button class="main-nav__toggle visually-hidden" type="button" aria-label="Открыть меню">
-        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
@@ -27,8 +32,10 @@
     </nav>
   </header>
   <section class="intro">
-    <div class="intro__wrapper">
-      <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="container">
+      <div class="intro__wrapper">
+        <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </div>
   </section>
   <main class="page-main">
@@ -36,8 +43,11 @@
     <section class="form-story">
       <div class="container">
         <h3 class="visually-hidden">Форма истории</h3>
-        <p class="form-story__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-          бонусную карту!</p>
+        <div class="form-story__slogan-wrapper">
+          <p class="form-story__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+            вашу
+            бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+        </div>
       </div>
       <form class="form-story__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-story__user-form">
@@ -66,46 +76,47 @@
         </div>
         <div class="form-story__record">
           <div class="container">
-            <fieldset class="form-story__group">
-              <legend class="form-story__title">Ваши безбашенные достижения в путешествии</legend>
+            <fieldset class="form-story__group-record">
+              <legend class="form-story__title-record">Ваши безбашенные<br> достижения в путешествии</legend>
               <ul class="form-story__list-record">
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox"
                     name="took-a-selfie-with-a-shark" id="filter-took-a-selfie-with-a-shark" checked>
-                  <label class="form-story__label-text" for="filter-took-a-selfie-with-a-shark">Сделал селфи с
+                  <label class="form-story__label-text-record" for="filter-took-a-selfie-with-a-shark">Сделал селфи с
                     акулой</label>
                 </li>
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox" name="burned-on-the-beach"
                     id="filter-burned-on-the-beach" checked>
-                  <label class="form-story__label-text" for="filter-burned-on-the-beach">Обгорел на пляже</label>
+                  <label class="form-story__label-text-record" for="filter-burned-on-the-beach">Обгорел на пляже</label>
                 </li>
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox" name="saw-chuck-norris"
                     id="filter-saw-chuck-norris">
-                  <label class="form-story__label-text" for="filter-saw-chuck-norris">Видел Чака Норриса</label>
+                  <label class="form-story__label-text-record" for="filter-saw-chuck-norris">Видел Чака Норриса</label>
                 </li>
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox"
                     name="bought-some-souvenirs" id="filter-bought-some-souvenirs">
-                  <label class="form-story__label-text" for="filter-bought-some-souvenirs">Накупил сувениров</label>
+                  <label class="form-story__label-text-record" for="filter-bought-some-souvenirs">Накупил
+                    сувениров</label>
                 </li>
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox" name="held-the-tower"
                     id="filter-held-the-tower" checked>
-                  <label class="form-story__label-text" for="filter-held-the-tower">Удержал башню</label>
+                  <label class="form-story__label-text-record" for="filter-held-the-tower">Удержал башню</label>
                 </li>
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox" name="trashed-the-hotel"
                     id="filter-trashed-the-hotel">
-                  <label class="form-story__label-text" for="filter-trashed-the-hotel">Разгромил отель</label>
+                  <label class="form-story__label-text-record" for="filter-trashed-the-hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
           </div>
         </div>
         <div class="container">
-          <fieldset class="form-story__group">
+          <fieldset class="form-story__group-contact">
             <legend class="form-story__title-contact">Контактная информация</legend>
             <ul class="form-story__list-contact">
               <li class="form-story__item-contact">
@@ -123,23 +134,23 @@
         </div>
         <div class="form-story__app">
           <div class="container">
-            <fieldset class="form-story__group">
-              <legend class="form-story__title">С каким приложением путешествовали?</legend>
+            <fieldset class="form-story__group-app">
+              <legend class="form-story__title-app">С каким приложением путешествовали?</legend>
               <ul class="form-story__list-app">
                 <li class="form-story__item-app">
                   <input class="visually-hidden form-story__filter-radio" type="radio" name="product-group"
                     id="filter-pink-for-ios" value="pink-for-ios" checked>
-                  <label class="form-story__label-text" for="filter-pink-for-ios">Pink для iOS</label>
+                  <label class="form-story__label-text-app" for="filter-pink-for-ios">Pink для iOS</label>
                 </li>
                 <li class="form-story__item-app">
                   <input class="visually-hidden form-story__filter-radio" type="radio" name="product-group"
                     id="filter-pink-on-android" value="pink-on-android">
-                  <label class="form-story__label-text" for="filter-pink-on-android">Pink на Android</label>
+                  <label class="form-story__label-text-app" for="filter-pink-on-android">Pink на Android</label>
                 </li>
                 <li class="form-story__item-app">
                   <input class="visually-hidden form-story__filter-radio" type="radio" name="product-group"
                     id="filter-windows-phone" value="windows-phone">
-                  <label class="form-story__label-text" for="filter-windows-phone">Windows Phone</label>
+                  <label class="form-story__label-text-app" for="filter-windows-phone">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
@@ -147,14 +158,14 @@
         </div>
         <div class="form-story__comment">
           <div class="container">
-            <fieldset class="form-story__group">
-              <legend class="form-story__title">Опишите свои эмоции</legend>
-              <textarea class="form-story__comment-text" name="comment"
+            <fieldset class="form-story__group-comment">
+              <legend class="form-story__title-comment">Опишите свои эмоции</legend>
+              <textarea class="form-story__comment-text" name="comment" cols="24" rows="5"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="form-story__button-wrapper">
               <button class="form-story__button-send" type="submit">Отправить форму</button>
-              <small class="form-story__required-fields">* — обязательные поля</small>
+              <small class="form-story__required-fields">* — обязательные <span>для заполнения</span> поля</small>
             </div>
           </div>
         </div>
@@ -165,7 +176,10 @@
     <div class="container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html" aria-label="Переход на главную">
-          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип Пинк">
+          </picture>
         </a>
         <section class="page-footer__social social">
           <h3 class="visually-hidden">Подписывайтесь на нас в соцсетях</h3>
@@ -185,7 +199,7 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Html Academy"></a>
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy"></a>
         </div>
       </div>
     </div>
@@ -205,6 +219,24 @@
       <button class="popup__button-ok" type="button">Ок</button>
     </div>
   </section>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

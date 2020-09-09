@@ -3,19 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фотографии|Pink</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__inner">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+      </button>
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html" aria-label="Переход на главную">
-          <img src="/source/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          </picture>
         </a>
-        <button class="main-nav__toggle visually-hidden" type="button" aria-label="Открыть меню">
-        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a class="site-list__link">Фотографии</a></li>
@@ -28,13 +33,12 @@
   </header>
   <section class="intro">
     <div class="intro__wrapper">
-      <h1 class="intro__title">Фотографии пользователей</h1>
+      <h1 class="intro__title">Фотографии<br> пользователей</h1>
     </div>
   </section>
   <main class="page-main">
     <h2 class="visually-hidden">Страница фотографий пользователей</h2>
     <section class="user-photo">
-
       <h3 class="visually-hidden">Фотографии</h3>
       <div class="container">
         <div class="user-photo__wrapper-slogan">
@@ -50,13 +54,17 @@
               <span class="user-photo__badge-text">Панорама дня</span>
             </div>
           </div>
-          <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-            alt="Панорама">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="user-photo__image-panorama" src="img/panorama-mobile@1x.jpg"
+              srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+          </picture>
         </div>
         <div class="container">
           <div class="user-photo__content-panorama">
-            <h4 class="user-photo__author-name">Анна<span class="user-photo__time">(5 минут назад)</span></h4>
-            <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+            <h4 class="user-photo__author-name-panorama">Анна<span class="user-photo__time">(5 минут назад)</span></h4>
+            <p class="user-photo__text-panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
               трансляцию
               в
               перископе, задавайте свои вопросы!</p>
@@ -73,8 +81,14 @@
         <div class="user-photo__wrapper">
           <article class="user-photo__description">
             <div class="user-photo__mobile-image">
-              <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото автомобиля">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                  alt="Фото автомобиля">
+              </picture>
             </div>
             <div class="user-photo__content">
               <h4 class="user-photo__author-name">Левон<span class="user-photo__time">(5 часов назад)</span></h4>
@@ -89,8 +103,14 @@
           </article>
           <article class="user-photo__description">
             <div class="user-photo__mobile-image">
-              <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото барабанов">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото барабанов">
+              </picture>
             </div>
             <div class="user-photo__content">
               <h4 class="user-photo__author-name">Антон<span class="user-photo__time">(12 часов назад)</span></h4>
@@ -105,8 +125,14 @@
           </article>
           <article class="user-photo__description">
             <div class="user-photo__mobile-image">
-              <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото холла">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg"
+                  srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото холла">
+              </picture>
             </div>
             <div class="user-photo__content">
               <h4 class="user-photo__author-name">Борис<span class="user-photo__time">(20 часов назад)</span></h4>
@@ -121,8 +147,14 @@
           </article>
           <article class="user-photo__description">
             <div class="user-photo__mobile-image">
-              <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото рынка">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg"
+                  srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото рынка">
+              </picture>
             </div>
             <div class="user-photo__content">
               <h4 class="user-photo__author-name">Сергей<span class="user-photo__time">(25 часов назад)</span></h4>
@@ -137,8 +169,14 @@
           </article>
           <article class="user-photo__description">
             <div class="user-photo__mobile-image">
-              <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото спуска с горы">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                  alt="Фото спуска с горы">
+              </picture>
             </div>
             <div class="user-photo__content">
               <h4 class="user-photo__author-name">Максим<span class="user-photo__time">(40 часов назад)</span></h4>
@@ -153,8 +191,14 @@
           </article>
           <article class="user-photo__description">
             <div class="user-photo__mobile-image">
-              <img class="user-photo__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Фото крыла самолёта">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg"
+                  srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото крыла самолёта">
+              </picture>
             </div>
             <div class="user-photo__content">
               <h4 class="user-photo__author-name">Надежда<span class="user-photo__time">(45 часов назад)</span></h4>
@@ -174,15 +218,21 @@
       <h3 class="visually-hidden">Загрузка фотографий</h3>
       <div class="container">
         <div class="upload__wrapper-slogan">
-          <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="upload__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </div>
       <div class="upload__wrapper">
         <div class="container">
           <div class="upload__filter">
             <div class="upload__photo">
-              <img class="upload__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Зимняя дорога">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+                  alt="Зимняя дорога">
+              </picture>
             </div>
             <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="upload__form-filter">
@@ -195,9 +245,9 @@
                     aria-label="Изменить контрастность"></button>
                 </div>
                 <div class="upload__range-filter">
-                  <input class="upload__range-current" type="range">
-                  <input class="upload__range" type="range">
-                  <input class="upload__range" type="range">
+                  <input class="upload__range-current" type="range" min="0" max="100" value="86">
+                  <input class="upload__range" type="range" min="0" max="100" value="13">
+                  <input class="upload__range" type="range" min="0" max="100" value="51">
                 </div>
               </div>
               <div class="upload__buttons">
@@ -214,7 +264,10 @@
     <div class="container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html" aria-label="Переход на главную">
-          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип Пинк">
+          </picture>
         </a>
         <section class="page-footer__social social">
           <h3 class="visually-hidden">Подписывайтесь на нас в соцсетях</h3>
@@ -234,11 +287,28 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Html Academy"></a>
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy"></a>
         </div>
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

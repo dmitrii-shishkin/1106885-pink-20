@@ -3,19 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+      </button>
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img src="/source/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          </picture>
         </a>
-        <button class="main-nav__toggle visually-hidden" type="button" aria-label="Открыть меню">
-        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
@@ -29,19 +34,25 @@
   <section class="promo">
     <div class="container">
       <div class="promo__wrapper">
-        <h1 class="promo__title">Взгляните на жизнь иначе!</h1>
-        <a class="promo__download-button" href="https://www.apple.com/ios/app-store" target="_blank">Скачать
-          приложение</a>
-        <ul class="promo__list">
-          <li class="promo__item"><a class="promo__link promo__link--apple" href="https://www.apple.com/ios/app-store"
-              target="_blank" aria-label="Переход на App Store"></a></li>
-          <li class="promo__item"><a class="promo__link promo__link--android" href="https://play.google.com/store"
-              target="_blank" aria-label="Переход на Google Play"></a></li>
-          <li class="promo__item"><a class="promo__link promo__link--microsoft"
-              href="https://www.microsoft.com/ru-RU/store/apps" target="_blank"
-              aria-label="Переход на Microsoft Store"></a></li>
-        </ul>
-        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <h1 class="promo__title">Взгляните<br> на жизнь<br> иначе!</h1>
+      </div>
+    </div>
+    <div class="promo__download">
+      <div class="container">
+        <div class="promo__download-wrapper">
+          <a class="promo__download-button" href="https://www.apple.com/ios/app-store" target="_blank">Скачать
+            приложение</a>
+          <ul class="promo__list">
+            <li class="promo__item"><a class="promo__link promo__link--apple" href="https://www.apple.com/ios/app-store"
+                target="_blank" aria-label="Переход на App Store"></a></li>
+            <li class="promo__item"><a class="promo__link promo__link--android" href="https://play.google.com/store"
+                target="_blank" aria-label="Переход на Google Play"></a></li>
+            <li class="promo__item"><a class="promo__link promo__link--microsoft"
+                href="https://www.microsoft.com/ru-RU/store/apps" target="_blank"
+                aria-label="Переход на Microsoft Store"></a></li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </div>
   </section>
@@ -50,24 +61,27 @@
     <section class="offering">
       <div class="container">
         <h3 class="visually-hidden">Наше предложение</h3>
-        <p class="offering__slogan">Устали от серости мегаполиса?<br> Нам есть, что вам предложить!</p>
+        <p class="offering__slogan">Устали от серости мегаполиса?</p>
+        <p class="offering__intro">Нам есть, что вам<br> предложить!</p>
       </div>
       <div class="offering__wrapper">
         <div class="container">
           <ul class="offering__list">
             <li class="offering__item offering__item--cheers-up">
               <h4 class="offering__title">Поднимает настроение</h4>
-              <p class="offering__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              <p class="offering__description">Приложение позволит вам победить осеннюю хандру<br> и депрессию буквально
+                в
                 несколько кликов!</p>
             </li>
             <li class="offering__item offering__item--changes-the-world">
               <h4 class="offering__title">Меняет мир вокруг</h4>
-              <p class="offering__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                усилить эффект</p>
+              <p class="offering__description">Сделайте снимок и<br> украсьте его смайликом<br> или текстовой подписью,
+                чтобы усилить эффект</p>
             </li>
             <li class="offering__item offering__item--makes-friends">
-              <h4 class="offering__title">Заводит новых друзей</h4>
-              <p class="offering__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              <h4 class="offering__title">Заводит<br> новых друзей</h4>
+              <p class="offering__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями<br> и
+                заводите
                 новых</p>
             </li>
           </ul>
@@ -78,11 +92,16 @@
       <h3 class="visually-hidden">Новости</h3>
       <div class="container">
         <div class="news__wrapper">
-          <span class="news__number news__number--timer">24</span>
+          <svg class="news__timer-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="238px" height="276px"
+            viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+            <path
+              d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+          </svg>
           <div class="news__content">
-            <h4 class="news__title">Эффект на 24 часа!</h4>
-            <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект от
-              использования приложения длится целые сутки!</p>
+            <h4 class="news__title">Эффект<br> на 24 часа!</h4>
+            <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от
+              использования приложения длится<br> целые сутки!</p>
             <a class="news__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -92,6 +111,19 @@
       <h3 class="visually-hidden">Отзывы</h3>
       <div class="reviews__wrapper slider">
         <div class="container">
+          <span class="reviews__quotes"><svg class="reviews__quotes-icon" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="79px"
+              height="64px" viewBox="0 0 79 64" enable-background="new 0 0 79 64" xml:space="preserve">
+              <g>
+                <path
+                  d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z" />
+              </g>
+              <g>
+                <path
+                  d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z" />
+              </g>
+            </svg>
+          </span>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author">
@@ -102,8 +134,22 @@
                   серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
-            <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
-            <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
+            <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"><svg class="reviews__prev-icon"
+                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="22px" height="41px" viewBox="0 0 22 41" enable-background="new 0 0 22 41"
+                xml:space="preserve">
+                <path
+                  d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
+              </svg>
+            </button>
+            <button class="reviews__next" type="button" aria-label="Следующий отзыв"><svg class="reviews__next-icon"
+                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="22px" height="41px" viewBox="0 0 22 41" enable-background="new 0 0 22 41"
+                xml:space="preserve">
+                <path
+                  d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
+              </svg>
+            </button>
           </div>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
@@ -115,45 +161,46 @@
     </section>
     <section class="price">
       <h3 class="visually-hidden">Наши цены</h3>
+      <!-- <div class="price__badge">
+        <span class="price__badge-text">Хит</span>
+      </div> -->
       <div class="price__wrapper slider">
-          <div class="price__badge">
-            <span class="price__badge-text">Хит</span>
-          </div>
-          <table class="price__table">
-            <thead class="price__header">
-              <tr class="price__row">
-                <th class="price__cell-title-none">&nbsp;</th>
-                <th class="price__cell-title">База<br><span class="price__cost">1,99 usd</span></th>
-                <th class="price__cell-title">Стандарт<br><span class="price__cost">3,99 usd</span></th>
-                <th class="price__cell-title">Анлим<br><span class="price__cost">9,99 usd</span></th>
-              </tr>
-            </thead>
-            <tbody class="price__body">
-              <tr class="price__row">
-                <td class="price__cell-product">Розовый фильтр</td>
-                <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
-                <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
-                <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
-              </tr>
-              <tr class="price__row">
-                <td class="price__cell-product">Смайлики</td>
-                <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
-                <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
-                <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
-              </tr>
-              <tr class="price__row">
-                <td class="price__cell-product">Комментарии</td>
-                <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
-                <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
-                <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
-            <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
-            <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
-          </div>
+        <table class="price__table">
+          <thead class="price__header">
+            <tr class="price__row">
+              <th class="price__cell-title-none">&nbsp;</th>
+              <th class="price__cell-title">База<br><span class="price__cost">1,99 usd</span></th>
+              <th class="price__cell-title price__cell-title--hit">Стандарт<br><span class="price__cost">3,99 usd</span>
+              </th>
+              <th class="price__cell-title">Анлим<br><span class="price__cost">9,99 usd</span></th>
+            </tr>
+          </thead>
+          <tbody class="price__body">
+            <tr class="price__row">
+              <td class="price__cell-product">Розовый фильтр</td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+            </tr>
+            <tr class="price__row">
+              <td class="price__cell-product">Смайлики</td>
+              <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+            </tr>
+            <tr class="price__row">
+              <td class="price__cell-product">Комментарии</td>
+              <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно"></td>
+              <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
+          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
+          <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
+        </div>
       </div>
     </section>
     <section class="contacts">
@@ -164,7 +211,8 @@
           <dl class="contacts__list">
             <div class="contacts__item">
               <dt class="contacts__title">Звоните:</dt>
-              <dd class="contacts__description"><a class="contacts__link-phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <dd class="contacts__description"><a class="contacts__link-phone" href="tel:+78125556666">+7 (812)
+                  555-66-66</a>
               </dd>
             </div>
             <div class="contacts__item">
@@ -179,15 +227,22 @@
           </dl>
         </div>
       </div>
-      <img src="https://via.placeholder.com/150x150" width="150" height="150"
-        alt="Офис по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002796!2d30.320858715651035!3d59.938719169054686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599654131531!5m2!1sru!2sru"
+          width="320" height="200" allowfullscreen=""
+          title="Офис по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип Пинк">
+          </picture>
         </a>
         <section class="page-footer__social social">
           <h3 class="visually-hidden">Подписывайтесь на нас в соцсетях</h3>
@@ -207,11 +262,28 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Html Academy"></a>
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy"></a>
         </div>
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

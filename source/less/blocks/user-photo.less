@@ -1,27 +1,69 @@
-.user-photo__image {
+.user-photo {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 4px;
+  }
+}
+
+.user-photo__image-panorama {
   display: block;
   width: 100%;
-  height: auto;
+  height: 137px;
+
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
+  }
+}
+
+.user-photo__image {
+  display: block;
+
+  height: 180px;
+
+  @media (min-width: @tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
 }
 
 .user-photo__wrapper-slogan {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto 51px;
+  width: 250px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    margin-bottom: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 572px;
+    margin-bottom: 89px;
+  }
 }
 
 
 .user-photo__slogan {
   margin: 0;
   padding: 0;
-  width: 250px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  text-align: center;
   color: @blue-gray;
 
   @media (min-width: @tablet-width) {
-    width: 550px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -29,7 +71,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 572px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -38,12 +79,26 @@
 }
 
 .user-photo__badge-text {
+  position: absolute;
+  top: 0;
+  right: 102px;
+  margin: 0;
+  padding: 6px 19px;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: @white;
   background-color: @pink;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 482px;
+  }
 }
 
 .user-photo__wrapper {
@@ -55,6 +110,9 @@
 }
 
 .user-photo__description-panorama {
+  position: relative;
+  margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 50px;
   }
@@ -69,25 +127,68 @@
 }
 
 .user-photo__content-panorama {
-  padding: 0 13px 0 17px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   background-color: @pale-gray;
 
   @media (min-width: @tablet-width) {
-    padding: 0 27px 0 30px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 23px 27px 25px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
+    padding-bottom: 24px;
   }
 }
 
 .user-photo__content {
-  padding: 0 13px 0 17px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  min-height: 121px;
   background-color: @pale-gray;
 
   @media (min-width: @tablet-width) {
-    padding: 0 27px 0 30px;
+    min-height: 155px;
+    padding: 23px 27px 25px 30px;
     width: 300px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 27px;
+    padding-bottom: 23px;
+  }
+}
+
+.user-photo__author-name-panorama {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: @blue-gray;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+}
+
+.user-photo__text-panorama {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: @blue-gray;
 }
 
 .user-photo__author-name {
@@ -96,6 +197,10 @@
   font-size: 14px;
   line-height: 24px;
   color: @blue-gray;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+  }
 }
 
 .user-photo__time {
@@ -115,10 +220,6 @@
   font-size: 14px;
   line-height: 24px;
   color: @blue-gray;
-
-  @media (min-width: @tablet-width) {
-    order: 3;
-  }
 }
 
 .user-photo__like-panorama {
@@ -126,11 +227,13 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    order: 1;
+    order: -1;
   }
 }
 
 .user-photo__like {
+  margin-top: auto;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
@@ -149,7 +252,7 @@
   color: @pink;
 
   @media (min-width: @tablet-width) {
-    margin-top: 2px;
+    margin-top: 0;
     padding-right: 16px;
     padding-left: 0;
   }
