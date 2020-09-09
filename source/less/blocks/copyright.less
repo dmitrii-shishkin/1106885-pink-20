@@ -1,14 +1,34 @@
+.copyright {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+  }
+}
+
 .copyright__text {
   margin: 0;
+  padding-top: 9px;
+  margin-right: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @blue-gray;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+  }
 
   @media (min-width: @desktop-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     color: @blue-gray;
+  }
+}
+
+.copyright__link {
+  @media (min-width: @tablet-width) {
+    padding-top: 3px;
   }
 }

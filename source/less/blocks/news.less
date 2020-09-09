@@ -3,10 +3,12 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-bottom: 82px;
     display: block;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
     background-color: @pale-gray;
   }
 }
@@ -15,6 +17,25 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 68px;
+  }
+}
+
+.news__timer-icon {
+  @media (min-width: @tablet-width) {
+    width: 238px;
+    height: 276px;
+    fill: @light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    height: 345px;
+    fill: @light-gray;
   }
 }
 
@@ -44,13 +65,13 @@
 
 .news__content {
   @media (min-width: @tablet-width) {
-    margin-left: 90px;
-    padding: px 0 0;
-    width: 310px;
+    padding-top: 35px;
+    margin-left: 72px;
+    width: 300px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 94px;
+    padding-top: 95px;
     width: 525px;
   }
 }
@@ -58,6 +79,7 @@
 .news__title {
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-bottom: 11px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -70,12 +92,17 @@
     font-size: 30px;
     line-height: 30px;
     color: @black;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .news__text {
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-bottom: 5px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -89,6 +116,10 @@
     font-size: 18px;
     line-height: 30px;
     color: @blue-gray;
+
+    br {
+      display: none;
+    }
   }
 }
 
