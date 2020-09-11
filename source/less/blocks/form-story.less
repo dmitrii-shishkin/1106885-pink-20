@@ -222,6 +222,7 @@
 }
 
 .form-story__item-record {
+  position: relative;
   margin-bottom: 52px;
   padding-left: 59px;
 
@@ -266,6 +267,41 @@
       order: 2;
     }
   }
+}
+
+.form-story__check-box {
+  position: absolute;
+  margin-left: -59px;
+  width: 39px;
+  height: 39px;
+  bottom: -5px;
+  background-color: @white;
+  border: 2px solid @mercury;
+  border-radius: 3px;
+}
+
+.form-story__filter-checkbox:checked + .form-story__check-box {
+  background-image: url("/source/img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-story__filter-checkbox:hover + .form-story__check-box,
+.form-story__filter-checkbox:focus + .form-story__check-box {
+  border: 2px solid @blue-gray;
+}
+
+.form-story__filter-checkbox:active + .form-story__check-box {
+  border: 2px solid @pink;
+}
+
+.form-story__filter-checkbox:checked:hover + .form-story__check-box,
+.form-story__filter-checkbox:checked:focus + .form-story__check-box {
+  border: 2px solid @blue-gray;
+}
+
+.form-story__filter-checkbox:checked:active + .form-story__check-box {
+  border: 2px solid @pink;
 }
 
 // -- Contact --
