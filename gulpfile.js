@@ -142,7 +142,7 @@ exports.sprite = sprite;
 
 // build
 
-const build = () => gulp.series(
+const build = gulp.series(
   clean,
   copy,
   styles,

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма|Pink</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__inner">
@@ -58,17 +58,17 @@
                 <li class="form-story__user-item">
                   <label class="form-story__field-name" for="last-name-field">Фамилия:</label>
                   <input class="form-story__field" id="last-name-field" type="text" name="last-name"
-                    placeholder="Укажите фамилию *">
+                    placeholder="Укажите фамилию *" required>
                 </li>
                 <li class="form-story__user-item">
                   <label class="form-story__field-name" for="name-field">Имя:</label>
                   <input class="form-story__field" id="name-field" type="text" name="name"
-                    placeholder="Введите ваше имя *">
+                    placeholder="Введите ваше имя *" required>
                 </li>
                 <li class="form-story__user-item">
                   <label class="form-story__field-name" for="patronymic-field">Отчество:</label>
                   <input class="form-story__field" id="patronymic-field" type="text" name="patronymic"
-                    placeholder="Ну и отчество тоже">
+                    placeholder="Ну и отчество тоже" required>
                 </li>
               </ul>
             </fieldset>
@@ -82,7 +82,7 @@
                 <li class="form-story__item-record">
                   <input class="visually-hidden form-story__filter-checkbox" type="checkbox"
                     name="took-a-selfie-with-a-shark" id="filter-took-a-selfie-with-a-shark" checked>
-                    <span class="form-story__check-box"></span>
+                  <span class="form-story__check-box"></span>
                   <label class="form-story__label-text-record" for="filter-took-a-selfie-with-a-shark">Сделал селфи с
                     акулой</label>
                 </li>
@@ -123,12 +123,12 @@
               <li class="form-story__item-contact">
                 <label class="form-story__field-name-contact" for="indicate-phone">Номер телефона</label>
                 <input class="form-story__field-contact" type="tel" name="phone" id="indicate-phone"
-                  placeholder="Номер, пожалуйста">
+                  placeholder="Номер, пожалуйста" required>
               </li>
               <li class="form-story__item-contact">
                 <label class="form-story__field-name-contact" for="indicate-email">Адрес почты</label>
                 <input class="form-story__field-contact" type="email" name="email" id="indicate-email"
-                  placeholder="Введите почту *">
+                  placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -161,8 +161,10 @@
           <div class="container">
             <fieldset class="form-story__group-comment">
               <legend class="form-story__title-comment">Опишите свои эмоции</legend>
-              <textarea class="form-story__comment-text" name="comment" cols="24" rows="5"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <label class="form-story__comment-label">
+                <textarea class="form-story__comment-text" name="comment" cols="24" rows="5"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
             </fieldset>
             <div class="form-story__button-wrapper">
               <button class="form-story__button-send" type="submit">Отправить форму</button>
