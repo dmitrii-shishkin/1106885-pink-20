@@ -222,16 +222,15 @@
 }
 
 .form-story__item-record {
-  position: relative;
   margin-bottom: 52px;
-  padding-left: 59px;
+  // padding-left: 59px;
 
   &:last-child {
     margin-bottom: 47px;
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 117px;
+    // padding-left: 117px;
 
     &:last-child {
       margin-bottom: 53px;
@@ -241,7 +240,7 @@
   @media (min-width: @desktop-width) {
     width: 260px;
     padding: 0;
-    padding-left: 59px;
+    // padding-left: 59px;
     margin-right: 55px;
 
 
@@ -269,38 +268,65 @@
   }
 }
 
-.form-story__check-box {
+.form-story__label-text-record {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 59px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @blue-gray;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 59px;
+  }
+}
+
+.form-story__checkbox {
   position: absolute;
-  margin-left: -59px;
   width: 39px;
   height: 39px;
-  bottom: -5px;
+  top: -7px;
+  left: 0;
   background-color: @white;
   border: 2px solid @mercury;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+  }
 }
 
-.form-story__filter-checkbox:checked + .form-story__check-box {
+.form-story__filter-checkbox:checked + .form-story__checkbox {
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.form-story__filter-checkbox:hover + .form-story__check-box,
-.form-story__filter-checkbox:focus + .form-story__check-box {
+.form-story__filter-checkbox:hover + .form-story__checkbox,
+.form-story__filter-checkbox:focus + .form-story__checkbox {
   border: 2px solid @blue-gray;
 }
 
-.form-story__filter-checkbox:active + .form-story__check-box {
+.form-story__filter-checkbox:active + .form-story__checkbox {
   border: 2px solid @pink;
 }
 
-.form-story__filter-checkbox:checked:hover + .form-story__check-box,
-.form-story__filter-checkbox:checked:focus + .form-story__check-box {
+.form-story__filter-checkbox:checked:hover + .form-story__checkbox,
+.form-story__filter-checkbox:checked:focus + .form-story__checkbox {
   border: 2px solid @blue-gray;
 }
 
-.form-story__filter-checkbox:checked:active + .form-story__check-box {
+.form-story__filter-checkbox:checked:active + .form-story__checkbox {
   border: 2px solid @pink;
 }
 
@@ -430,6 +456,19 @@
   }
 }
 
+.form-story__phone {
+  display: block;
+  width: 59px;
+  height: 59px;
+  background-color: @mercury;
+}
+
+.form-story__icon-phone {
+  width: 20px;
+  height: 19px;
+  fill: @pink;
+}
+
 // --App --
 
 .form-story__app {
@@ -489,7 +528,6 @@
 }
 
 .form-story__item-app {
-  padding-left: 70px;
   margin-bottom: 45px;
 
   &:last-child {
@@ -497,16 +535,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 119px;
-
     &:last-child {
       margin-bottom: 57px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 133px;
-
     &:nth-child(2) {
       margin-bottom: 47px;
     }
@@ -514,11 +548,70 @@
 }
 
 .form-story__label-text-app {
+  position: relative;
   margin: 0;
+  padding-left: 70px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: @blue-gray;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 133px;
+  }
+}
+
+.form-story__radio {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: -7px;
+  left: 0;
+  background: @white;
+  border: 2px solid @mercury;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 72px;
+  }
+}
+
+.form-story__radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: @pink;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.form-story__filter-radio:checked + .form-story__radio::before {
+  opacity: 1;
+}
+
+.form-story__filter-radio:hover + .form-story__radio,
+.form-story__filter-radio:focus + .form-story__radio {
+  border: 2px solid @blue-gray;
+  border-radius: 50%;
+}
+
+.form-story__filter-radio:active + .form-story__radio {
+  border: 2px solid @pink;
+  border-radius: 50%;
 }
 
 // -- Comment --

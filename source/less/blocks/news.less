@@ -15,6 +15,7 @@
 
 .news__wrapper {
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
   }
@@ -27,15 +28,21 @@
 
 .news__timer-icon {
   @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    top: -6px;
+    left: 0;
     width: 238px;
     height: 276px;
     fill: @light-gray;
+    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
     width: 298px;
     height: 345px;
     fill: @light-gray;
+    z-index: 1;
   }
 }
 
@@ -43,30 +50,36 @@
   @media (min-width: @tablet-width) {
     display: inline-block;
     margin: 0;
-    padding: 1px 30px 8px;
+    margin-left: 19px;
+    margin-top: 50px;
+    width: 202px;
+    height: 202px;
     font-weight: bold;
     font-size: 96px;
     line-height: 163px;
+    text-align: center;
     color: @pink;
     border: 16px solid @pink;
     border-radius: 50%;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 22px 40px 29px;
+    width: 252px;
+    height: 252px;
     font-weight: 700;
     font-size: 120px;
     line-height: 163px;
     color: @pink;
     border: 18px solid @pink;
     border-radius: 50%;
+    z-index: 2;
   }
 }
 
 .news__content {
   @media (min-width: @tablet-width) {
     padding-top: 35px;
-    margin-left: 72px;
+    margin-left: 90px;
     width: 300px;
   }
 
