@@ -12,13 +12,16 @@
 }
 
 .price__wrapper {
-  padding-top: 70px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 101px;
 
   @media (min-width: @tablet-width) {
     max-width: 620px;
     margin: 0 auto;
     padding-top: 97px;
     padding-bottom: 70px;
+    overflow: initial;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,8 +33,67 @@
 }
 
 .price__table {
-  width: 100%;
+  min-width: 840px;
+  transform: translateX(-179px);
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    min-width: 680px;
+    transform: translateX(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 940px;
+  }
+}
+
+.slider__list--first-slide {
+  transform: translateX(20px);
+}
+
+.slider__list--second-slide {
+  transform: translateX(-260px);
+}
+
+.slider__list--third-slide {
+  transform: translateX(-540px);
+}
+
+.desktop-hidden {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @blue-gray;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__row td:first-child,
+.price__row th:first-child {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.price__row td,
+.price__row th {
+  min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 235px;
+  }
 }
 
 .price__badge-text {
@@ -52,6 +114,8 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 11px;
+  padding-bottom: 27px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -189,6 +253,7 @@
 .price__cell-availability {
   background-color: @white;
   border: 2px solid @mercury;
+  border-top: none;
 
   @media (min-width: @tablet-width) {
     text-align: center;
@@ -196,6 +261,9 @@
 }
 
 .price__toggles {
+  width: 60px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
