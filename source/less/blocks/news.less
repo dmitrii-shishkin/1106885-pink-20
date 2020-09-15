@@ -3,7 +3,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    margin-bottom: 82px;
+    margin-bottom: 107px;
     display: block;
   }
 
@@ -42,23 +42,20 @@
     width: 298px;
     height: 345px;
     fill: @light-gray;
-    z-index: 1;
   }
 }
 
-.news__number {
+.news__diagram-fill {
   @media (min-width: @tablet-width) {
-    display: inline-block;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 19px;
     margin-top: 50px;
     width: 202px;
     height: 202px;
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 163px;
-    text-align: center;
-    color: @pink;
+    background-color: transparent;
     border: 16px solid @pink;
     border-radius: 50%;
   }
@@ -66,13 +63,25 @@
   @media (min-width: @desktop-width) {
     width: 252px;
     height: 252px;
+    border: 18px solid @pink;
+    border-radius: 50%;
+  }
+}
+
+.news__number {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 163px;
+    color: @pink;
+  }
+
+  @media (min-width: @desktop-width) {
     font-weight: 700;
     font-size: 120px;
     line-height: 163px;
     color: @pink;
-    border: 18px solid @pink;
-    border-radius: 50%;
-    z-index: 2;
   }
 }
 
