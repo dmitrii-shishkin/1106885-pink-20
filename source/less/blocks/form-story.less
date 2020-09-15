@@ -1,4 +1,5 @@
 .form-story {
+  position: relative;
   margin-bottom: 63px;
 
   @media (min-width: @tablet-width) {
@@ -392,6 +393,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -438,6 +440,7 @@
   color: @blue-gray;
   border: 2px solid @mercury;
   border-radius: 3px;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -457,16 +460,57 @@
 }
 
 .form-story__phone {
-  display: block;
-  width: 59px;
-  height: 59px;
-  background-color: @mercury;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: block;
+    width: 59px;
+    height: 59px;
+    background-color: @mercury;
+  }
 }
 
 .form-story__icon-phone {
-  width: 20px;
-  height: 19px;
-  fill: @pink;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 20px;
+    height: 19px;
+    fill: @pink;
+  }
+}
+
+.form-story__mail {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: block;
+    width: 59px;
+    height: 59px;
+    background-color: @mercury;
+  }
+}
+
+.form-story__icon-mail {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 18px;
+    height: 13px;
+    fill: @pink;
+  }
 }
 
 // --App --
@@ -747,17 +791,19 @@
   text-transform: uppercase;
   color: @blue-gray;
 
-  span {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     padding-top: 17px;
   }
+}
+
+.form-story__desktop-hidden {
+  display: none;
 
   @media (min-width: @desktop-width) {
-    span {
-      display: inline-block;
-    }
+    display: inline-block;
   }
+}
+
+.form-story__star {
+  color: @pink;
 }
