@@ -24,6 +24,30 @@
   }
 }
 
+.user-photo__badge-text {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 102px;
+  margin: 0;
+  padding: 6px 19px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @pink;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 482px;
+  }
+}
+
 .user-photo__image {
   display: block;
 
@@ -78,29 +102,6 @@
   }
 }
 
-.user-photo__badge-text {
-  position: absolute;
-  top: 0;
-  right: 102px;
-  margin: 0;
-  padding: 6px 19px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: @white;
-  background-color: @pink;
-
-  @media (min-width: @tablet-width) {
-    top: 57px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 54px;
-    right: 482px;
-  }
-}
-
 .user-photo__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -129,6 +130,8 @@
 .user-photo__content-panorama {
   display: flex;
   flex-direction: column;
+  margin-right: 2px;
+  padding-right: 10px;
   padding-left: 17px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -140,12 +143,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 23px 27px 25px 30px;
+    padding: 23px 25px 20px 30px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 27px;
-    padding-bottom: 24px;
+    padding-bottom: 19px;
   }
 }
 
@@ -160,7 +163,7 @@
 
   @media (min-width: @tablet-width) {
     min-height: 155px;
-    padding: 23px 27px 25px 30px;
+    padding: 22px 27px 25px 30px;
     width: 300px;
   }
 
@@ -185,6 +188,7 @@
 .user-photo__text-panorama {
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -244,7 +248,7 @@
 
 .user-photo__like-text-panorama {
   margin: 0;
-  padding-left: 11px;
+  padding-left: 14px;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -253,14 +257,14 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    padding-right: 16px;
+    padding-right: 19px;
     padding-left: 0;
   }
 }
 
 .user-photo__like-text {
   margin: 0;
-  padding-left: 11px;
+  padding-left: 13px;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -269,5 +273,30 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+}
+
+.user-photo__button-like {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 13px;
+  height: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.user-photo__icon-heart {
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 2px;
+  left: 0;
+  fill: @pink;
+
+  @media (min-width: @tablet-width) {
+    top: 1px;
+    left: -3px;
   }
 }

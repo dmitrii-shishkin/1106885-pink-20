@@ -1,6 +1,6 @@
 .price {
   background-color: @pale-gray;
-  margin-bottom: 47px;
+  margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 43px;
@@ -15,20 +15,21 @@
   width: 100%;
   overflow: hidden;
   padding-top: 101px;
+  padding-bottom: 46px;
 
   @media (min-width: @tablet-width) {
     max-width: 620px;
     margin: 0 auto;
     padding-top: 97px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     overflow: initial;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 940px;
     margin: 0 auto;
-    padding-top: 158px;
-    padding-bottom: 94px;
+    padding-top: 153px;
+    padding-bottom: 56px;
   }
 }
 
@@ -36,9 +37,10 @@
   min-width: 840px;
   transform: translateX(-179px);
   border-collapse: collapse;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    min-width: 680px;
+    min-width: 620px;
     transform: translateX(0);
   }
 
@@ -61,8 +63,6 @@
 
 .desktop-hidden {
   margin: 0;
-  padding: 0;
-
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -218,7 +218,6 @@
 
 .price__cell-product {
   margin: 0;
-  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -226,6 +225,8 @@
   color: @blue-gray;
   background-color: @white;
   border: 2px solid @mercury;
+  border-right: none;
+  border-top: none;
 
   @media (min-width: @tablet-width) {
     padding-left: 16px;
@@ -251,12 +252,47 @@
 }
 
 .price__cell-availability {
+  position: relative;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 16px;
   background-color: @white;
   border: 2px solid @mercury;
   border-top: none;
 
   @media (min-width: @tablet-width) {
     text-align: center;
+    padding: 0;
+  }
+}
+
+.price__icon-yes {
+  position: absolute;
+  top: 18px;
+  right: 17px;
+  width: 31px;
+  height: 21px;
+  fill: @light-green;
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.price__icon-no {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  width: 27px;
+  height: 27px;
+  fill: @scarlet;
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

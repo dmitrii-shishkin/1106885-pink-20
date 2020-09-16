@@ -9,29 +9,11 @@
 </head>
 
 <body class="page__body">
-  <!-- <svg style="display: none;">
-    <symbol viewBox="0 0 79 64" id="icon-quotes">
-      <g>
-        <path
-          d=" M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172
-      c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z" />
-      </g>
-      <g>
-        <path
-          d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z" />
-      </g>
+  <svg style="display: none;">
+    <symbol id="icon-htmlacademy" viewBox="0 0 60 60">
+      <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
     </symbol>
-
-    <symbol viewBox="0 0 22 41" id="icon-review-arrow-left">
-      <path
-        d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
-    </symbol>
-
-    <symbol viewBox="0 0 22 41" id="icon-review-arrow-right">
-      <path
-        d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
-    </symbol>
-  </svg> -->
+  </svg>
 
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -103,7 +85,7 @@
                 чтобы усилить эффект</p>
             </li>
             <li class="offering__item offering__item--makes-friends">
-              <h4 class="offering__title">Заводит &nbsp;<br>новых друзей</h4>
+              <h4 class="offering__title">Заводит<br>новых друзей</h4>
               <p class="offering__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями<br>и
                 заводите
                 новых</p>
@@ -118,14 +100,14 @@
         <div class="news__wrapper">
           <div class="news__diagram-fill">
             <p class="news__number">24</p>
-            <svg class="news__timer-icon" width="238px" height="276px">
-              <use xlink:href="img/sprite.svg#icon-timer"></use>
-            </svg>
           </div>
+          <svg class="news__timer-icon" width="238px" height="276px">
+            <use xlink:href="img/sprite.svg#icon-timer"></use>
+          </svg>
           <div class="news__content">
             <h4 class="news__title">Эффект &nbsp;<br>на 24 часа!</h4>
-            <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект &nbsp;<br>от
-              использования приложения длится &nbsp;<br>целые сутки!</p>
+            <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект<br>от
+              использования приложения длится<br>целые сутки!</p>
             <a class="news__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -190,51 +172,87 @@
               <td class="price__cell-product">Розовый фильтр</td>
               <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно">
                 <span class="desktop-hidden">Розовый фильтр</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-yes" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
               </td>
               <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно">
                 <span class="desktop-hidden">Розовый фильтр</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-yes" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
               </td>
               <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно">
                 <span class="desktop-hidden">Розовый фильтр</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-yes" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
               </td>
             </tr>
             <tr class="price__row">
               <td class="price__cell-product">Смайлики</td>
               <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно">
                 <span class="desktop-hidden">Смайлики</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-no" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>
+                </span>
               </td>
               <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно">
                 <span class="desktop-hidden">Смайлики</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-yes" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
               </td>
               <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно">
                 <span class="desktop-hidden">Смайлики</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-yes" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
               </td>
             </tr>
             <tr class="price__row">
               <td class="price__cell-product">Комментарии</td>
               <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно">
                 <span class="desktop-hidden">Комментарии</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-no" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>
+                </span>
               </td>
               <td class="price__cell-availability price__cell-availability--icon-no" aria-label="Не доступно">
                 <span class="desktop-hidden">Комментарии</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-no" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>
+                </span>
               </td>
               <td class="price__cell-availability price__cell-availability--icon-yes" aria-label="Доступно">
                 <span class="desktop-hidden">Комментарии</span>
-                <span>&checkmark;</span>
+                <span>
+                  <svg class="price__icon-yes" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
               </td>
             </tr>
           </tbody>
         </table>
-        <div class="price__toggles slider__toggles">
-          <div class="container">
+        <div class="container">
+          <div class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
             <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
             <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
@@ -313,7 +331,9 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy"></a>
+            <svg class="copyright__icon-htmlacademy" width="27px" height="34px">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg></a>
         </div>
       </div>
     </div>
