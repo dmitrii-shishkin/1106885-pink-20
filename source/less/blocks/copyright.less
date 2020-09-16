@@ -9,15 +9,11 @@
 .copyright__text {
   margin: 0;
   padding-top: 9px;
-  margin-right: 14px;
+  padding-right: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @blue-gray;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 15px;
-  }
 
   @media (min-width: @desktop-width) {
     font-weight: 400;
@@ -27,8 +23,21 @@
   }
 }
 
-.copyright__link {
+.copyright__icon-htmlacademy {
+  width: 45px;
+  height: 45px;
+  fill: @pink;
+
+  &:hover,
+  &:focus {
+    fill: @blue-gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
-    padding-top: 3px;
+    padding-left: 11px;
   }
 }

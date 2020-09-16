@@ -71,6 +71,9 @@
             <div class="user-photo__like-panorama">
               <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                 aria-label="Поставь лайк">
+                <svg class="user-photo__icon-heart" width="13x" height="12px">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
               </button>
               <span class="user-photo__like-text-panorama">Нравится: 215</span>
             </div>
@@ -96,6 +99,9 @@
               <div class="user-photo__like">
                 <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                   aria-label="Поставь лайк">
+                  <svg class="user-photo__icon-heart" width="13x" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
                 </button>
                 <span class="user-photo__like-text">Нравится: 356</span>
               </div>
@@ -118,6 +124,9 @@
               <div class="user-photo__like">
                 <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                   aria-label="Поставь лайк">
+                  <svg class="user-photo__icon-heart" width="13x" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
                 </button>
                 <span class="user-photo__like-text">Нравится: 666</span>
               </div>
@@ -140,6 +149,9 @@
               <div class="user-photo__like">
                 <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                   aria-label="Поставь лайк">
+                  <svg class="user-photo__icon-heart" width="13x" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
                 </button>
                 <span class="user-photo__like-text">Нравится: 215</span>
               </div>
@@ -162,6 +174,9 @@
               <div class="user-photo__like">
                 <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                   aria-label="Поставь лайк">
+                  <svg class="user-photo__icon-heart" width="13x" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
                 </button>
                 <span class="user-photo__like-text">Нравится: 4</span>
               </div>
@@ -184,6 +199,9 @@
               <div class="user-photo__like">
                 <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                   aria-label="Поставь лайк">
+                  <svg class="user-photo__icon-heart" width="13x" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
                 </button>
                 <span class="user-photo__like-text">Нравится: 150</span>
               </div>
@@ -206,6 +224,9 @@
               <div class="user-photo__like">
                 <button class="user-photo__button-like user-photo__button-like--heart" type="button"
                   aria-label="Поставь лайк">
+                  <svg class="user-photo__icon-heart" width="13x" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
                 </button>
                 <span class="user-photo__like-text">Нравится: 2560</span>
               </div>
@@ -237,12 +258,21 @@
             <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="upload__form-filter">
                 <div class="upload__icon-filter">
-                  <button class="upload__button-icon upload__button-icon--crop" type="button"
-                    aria-label="Изменить размер"></button>
-                  <button class="upload__button-icon upload__button-icon--fill" type="button"
-                    aria-label="Изменить насыщеность"></button>
-                  <button class="upload__button-icon upload__button-icon--contrast" type="button"
-                    aria-label="Изменить контрастность"></button>
+                  <button class="upload__button-icon" type="button" aria-label="Изменить размер">
+                    <svg class="upload__icon-crop upload__icon-crop--current" width="44" height="44px">
+                      <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                    </svg>
+                  </button>
+                  <button class="upload__button-icon" type="button" aria-label="Изменить насыщеность">
+                    <svg class="upload__icon-fill" width="48x" height="43px">
+                      <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                    </svg>
+                  </button>
+                  <button class="upload__button-icon" type="button" aria-label="Изменить контрастность">
+                    <svg class="upload__icon-contrast" width="32x" height="32px">
+                      <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                    </svg>
+                  </button>
                 </div>
                 <div class="upload__range-filter">
                   <label class="upload__range-label">
@@ -305,7 +335,10 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link copyright__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank" aria-label="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy"></a>
+            <svg class="copyright__icon-htmlacademy" width="27" height="34">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
